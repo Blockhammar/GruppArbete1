@@ -1,0 +1,21 @@
+﻿@using GruppArbete1.Models
+@model Product[]
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <title>Products</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <p>
+        Nu är Klockan @DateTime.Now
+    </p>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li> test @item.Id @item.Make @item.Model, @item.Price.ToString("c")</li>
+        }
+    </ul>
+</body>
+</html>
