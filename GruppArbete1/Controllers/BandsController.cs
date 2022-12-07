@@ -3,12 +3,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GruppArbete1.Controllers
 {
-    public class ProductsController : Controller
+    public class BandsController : Controller
     {
-        ProductsService service;
-        public ProductsController()
+        BandsService service;
+        public BandsController()
         {
-            service = new ProductsService();
+            service = new BandsService();
 
         }
 
