@@ -7,24 +7,19 @@
     <title>Products</title>
 </head>
 <body>
-    @if (Model.Id == 1)
-    {
-        <img src="~/images/1.jpg" class="img" alt="My image"/>
-
-    } else if(Model.Id == 2)
-    {
-        <img src="~/images/2.jpg" class="img" alt="My image" />
-    } else
-    {
-        <img src="~/images/3.jpg" class="img" alt="My image" />
-
-    }
+    <img src="@String.Format("/images/{0}.jpg", Model.Id)" class="img" alt="My image" />
 
     <h1>@Model.Name</h1>
 
     <h4>Description</h4>
     <p>@Model.Description</p>
-    
+
+    <style>
+        .img {
+            max-width: 50%;
+        }
+    </style>
+
 
 </body>
 </html>
