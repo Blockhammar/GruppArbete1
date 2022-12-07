@@ -30,5 +30,7 @@ namespace GruppArbete1.Controllers
             var model = modelLista.FirstOrDefault(b => b.Id == id);
             return View(model);
         }
+
+        
     }
 }
