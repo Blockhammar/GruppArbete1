@@ -1,5 +1,5 @@
 ﻿@using GruppArbete1.Models
-@model Band[]
+@model Band
 
 <html>
 <head>
@@ -7,13 +7,10 @@
     <title>Products</title>
 </head>
 <body>
-    <h1>Favoritband</h1>
+    <h1>@Model.Name</h1>
 
-    <ul>
-        @foreach (var item in Model)
-        {
-            <li><a href="Bands/details/@item.Id"> @item.Id: @item.Name</a> </li>
-        }
-    </ul>
+    <h3>Description</h3>
+    <p>@Model.Description</p>
+
 </body>
 </html>
