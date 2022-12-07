@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Bands\BandImages\" />
+    <None Include="wwwroot\images\1.jpg" />
+    <None Include="wwwroot\images\2.jpg" />
+    <None Include="wwwroot\images\3.jpg" />
   </ItemGroup>
 
 </Project>
