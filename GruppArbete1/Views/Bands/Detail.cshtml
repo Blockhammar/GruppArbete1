@@ -4,19 +4,19 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <title>Products</title>
+    <title>Favorite Bands</title>
 </head>
 <body>
     @if (Model.Id == 1)
     {
-        <img src="~/images/1.jpg" class="img" alt="My image"/>
+        <img src="~/images/1.jpg" class="img1" alt="My image"/>
 
     } else if(Model.Id == 2)
     {
-        <img src="~/images/2.jpg" class="img" alt="My image" />
+        <img src="~/images/2.jpg" class="img2" alt="My image" />
     } else
     {
-        <img src="~/images/3.jpg" class="img" alt="My image" />
+        <img src="~/images/3.jpg" class="img3" alt="My image" />
 
     }
 
@@ -24,7 +24,20 @@
 
     <h4>Description</h4>
     <p>@Model.Description</p>
-    
+    <style>
+        .img1 {
+            max-width: 50%;
+        }
+
+        .img2 {
+            max-width: 50%;
+        }
+
+        .img3 {
+            max-width: 50%;
+        }
+
+    </style>
 
 </body>
 </html>
